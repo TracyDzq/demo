@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>banner效果</title>
+	<link rel="stylesheet" href="css/public-pc.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+		.swiper-slide{
+			width: 1000%;
+			background-color: #f99;
+		}
+		.swiper-slide a{
+			display: block;
+			width: 100%;
+			height: 400px;
+		}
+		/*.swiper-button-next{background-image:url("");*/
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href=""><h1>轮播1</h1></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><h1>轮播2</h1></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><h1>轮播3</h1></a>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        <!-- 修改箭头颜色示范 -->
+		<!-- <div class="swiper-button-next swiper-button-white"></div> --> <!-- 白色 -->
+		<!-- <div class="swiper-button-next swiper-button-black"></div> --> <!-- 黑色 -->
+    </div>
+
+	<script src="js/swiper.min.js"></script>
+    <script>
+	    var mySwiper = new Swiper('.swiper-container', {
+	        autoplay: 5000,
+	        loop: true,
+	        pagination : '.swiper-pagination',
+	        prevButton:'.swiper-button-prev',
+			nextButton:'.swiper-button-next',
+	        autoplayDisableOnInteraction: false
+	    })
+	</script>
+</body>
+</html>
